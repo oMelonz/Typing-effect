@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+body{
+    background: navajowhite;
+    background-size: cover;
+    font-family: 'Trebuchet MS', sans-serif; 
+    padding: 250px 50px 200px 200px;
+}
+.container {
+    display: inline-block;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+@keyframes blink {
+    from { border-color: transparent }
+    to { border-color: orange; }
+  }
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    font-size: 8em;
+    font-weight: 500;
+    width: 0;
+    animation: 
+    typing 1s steps(20, end) forwards,
+    blink .9s infinite;
+}
